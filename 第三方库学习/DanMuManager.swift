@@ -14,7 +14,7 @@ class DanMuManager {
     
     var allViewArray = [FlyLabelView]()
     
-    func showDanMu( num : Int)  {
+    func showDanMu( num : String , fatherView : UIView = UIApplication.shared.keyWindow! )  {
         
         let view = getAvailableFlyLabelView()
         
@@ -25,21 +25,23 @@ class DanMuManager {
         // 弹幕实在太多的情况,就需要有选择的处理弹幕,当前登录的用户在自己的屏幕上肯定加入,剩余其他人的弹幕,有选择的加入部分;
         // 弹幕的速度也要是可变的,长弹幕快点消失,保证用户可以看完一条弹幕
         view.y = CGFloat(arc4random() % 10) * view.height 
-        view.maxX = 0
-       
+
         view.textLabel.text = "盈盈一水间，脉脉不得语。\(num)"
-        UIView.animate(withDuration: 8, delay: 0, options: [.curveLinear], animations: {
-            view.x = Screen_Width
+        view.textLabel.sizeToFit()
+        view.width = view.textLabel.width*1.1
+        view.x = Screen_Width
+
+        UIView.animate(withDuration:5, delay: 0, options: [.allowUserInteraction,.curveLinear,], animations: {
+            view.maxX = 0
+
 
         }) { (finish) in
             view.tag = 1
 
         }
         
-        
-        
         print(allViewArray.count)
-        UIApplication.shared.keyWindow?.addSubview(view)
+        fatherView.addSubview(view)
         
         
     }
@@ -62,6 +64,7 @@ class DanMuManager {
     
     func createNewFlyLableView() -> FlyLabelView {
         let view = Bundle.main.loadNibNamed("FlyLabelView", owner: nil, options: nil)?.first as! FlyLabelView
+        view.x = Screen_Width
         view.tag = 0
         allViewArray.append(view)
         return view

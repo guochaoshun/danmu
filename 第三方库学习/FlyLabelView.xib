@@ -16,7 +16,7 @@
             <rect key="frame" x="0.0" y="0.0" width="220" height="36"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="盈盈一水间，脉脉不得语。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wDN-TV-R6X">
+                <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="盈盈一水间，脉脉不得语。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wDN-TV-R6X">
                     <rect key="frame" x="18" y="9" width="184" height="18"/>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <nil key="textColor"/>
@@ -24,6 +24,7 @@
                 </label>
             </subviews>
             <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
+            <gestureRecognizers/>
             <constraints>
                 <constraint firstItem="wDN-TV-R6X" firstAttribute="centerX" secondItem="csz-zt-5cj" secondAttribute="centerX" id="GSo-go-c8Z"/>
                 <constraint firstItem="wDN-TV-R6X" firstAttribute="centerY" secondItem="csz-zt-5cj" secondAttribute="centerY" id="Zrj-QE-Q2y"/>
@@ -32,8 +33,14 @@
             <viewLayoutGuide key="safeArea" id="csz-zt-5cj"/>
             <connections>
                 <outlet property="textLabel" destination="wDN-TV-R6X" id="t8c-q5-2cG"/>
+                <outletCollection property="gestureRecognizers" destination="Q2I-P6-MVA" appends="YES" id="6y3-5U-OF6"/>
             </connections>
             <point key="canvasLocation" x="-277" y="-102"/>
         </view>
+        <tapGestureRecognizer id="Q2I-P6-MVA">
+            <connections>
+                <action selector="tapFlyLabel:" destination="c9I-Lv-XHr" id="zdM-24-eBf"/>
+            </connections>
+        </tapGestureRecognizer>
     </objects>
 </document>
