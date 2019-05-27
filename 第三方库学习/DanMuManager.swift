@@ -9,6 +9,10 @@
 
 import UIKit
 
+
+// 今天突然发现有个第三库BarrageRenderer,有机会看看  https://github.com/unash/BarrageRenderer
+
+
 // 本来想做成单例,但是想想可能没有必要,就让DanMuManager和ViewController的生命周期一致就行,作为ViewController的属性就行了
 class DanMuManager {
     
