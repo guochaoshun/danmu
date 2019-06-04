@@ -38,17 +38,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9C1E93172109A84F005740B4 /* 第三方库学习.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "第三方库学习.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C1E93172109A84F005740B4 /* Danmu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Danmu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C1E931A2109A84F005740B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9C1E931C2109A84F005740B4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9C1E931F2109A84F005740B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9C1E93212109A859005740B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C1E93242109A859005740B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C1E93262109A859005740B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9C1E932B2109A859005740B4 /* 第三方库学习Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "第三方库学习Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C1E932B2109A859005740B4 /* DanmuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DanmuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C1E932F2109A859005740B4 /* ______Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "______Tests.swift"; sourceTree = "<group>"; };
 		9C1E93312109A859005740B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9C1E93362109A859005740B4 /* 第三方库学习UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "第三方库学习UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C1E93362109A859005740B4 /* DanmuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DanmuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C1E933A2109A859005740B4 /* ______UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "______UITests.swift"; sourceTree = "<group>"; };
 		9C1E933C2109A859005740B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C1E93482109ADC5005740B4 /* Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
@@ -95,9 +95,9 @@
 		9C1E93182109A84F005740B4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9C1E93172109A84F005740B4 /* 第三方库学习.app */,
-				9C1E932B2109A859005740B4 /* 第三方库学习Tests.xctest */,
-				9C1E93362109A859005740B4 /* 第三方库学习UITests.xctest */,
+				9C1E93172109A84F005740B4 /* Danmu.app */,
+				9C1E932B2109A859005740B4 /* DanmuTests.xctest */,
+				9C1E93362109A859005740B4 /* DanmuUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,9 +140,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9C1E93162109A84F005740B4 /* 第三方库学习 */ = {
+		9C1E93162109A84F005740B4 /* Danmu */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9C1E933F2109A859005740B4 /* Build configuration list for PBXNativeTarget "第三方库学习" */;
+			buildConfigurationList = 9C1E933F2109A859005740B4 /* Build configuration list for PBXNativeTarget "Danmu" */;
 			buildPhases = (
 				9C1E93132109A84F005740B4 /* Sources */,
 				9C1E93142109A84F005740B4 /* Frameworks */,
@@ -152,14 +152,14 @@
 			);
 			dependencies = (
 			);
-			name = "第三方库学习";
+			name = Danmu;
 			productName = "第三方库学习";
-			productReference = 9C1E93172109A84F005740B4 /* 第三方库学习.app */;
+			productReference = 9C1E93172109A84F005740B4 /* Danmu.app */;
 			productType = "com.apple.product-type.application";
 		};
-		9C1E932A2109A859005740B4 /* 第三方库学习Tests */ = {
+		9C1E932A2109A859005740B4 /* DanmuTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9C1E93422109A859005740B4 /* Build configuration list for PBXNativeTarget "第三方库学习Tests" */;
+			buildConfigurationList = 9C1E93422109A859005740B4 /* Build configuration list for PBXNativeTarget "DanmuTests" */;
 			buildPhases = (
 				9C1E93272109A859005740B4 /* Sources */,
 				9C1E93282109A859005740B4 /* Frameworks */,
@@ -170,14 +170,14 @@
 			dependencies = (
 				9C1E932D2109A859005740B4 /* PBXTargetDependency */,
 			);
-			name = "第三方库学习Tests";
+			name = DanmuTests;
 			productName = "第三方库学习Tests";
-			productReference = 9C1E932B2109A859005740B4 /* 第三方库学习Tests.xctest */;
+			productReference = 9C1E932B2109A859005740B4 /* DanmuTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		9C1E93352109A859005740B4 /* 第三方库学习UITests */ = {
+		9C1E93352109A859005740B4 /* DanmuUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9C1E93452109A859005740B4 /* Build configuration list for PBXNativeTarget "第三方库学习UITests" */;
+			buildConfigurationList = 9C1E93452109A859005740B4 /* Build configuration list for PBXNativeTarget "DanmuUITests" */;
 			buildPhases = (
 				9C1E93322109A859005740B4 /* Sources */,
 				9C1E93332109A859005740B4 /* Frameworks */,
@@ -188,9 +188,9 @@
 			dependencies = (
 				9C1E93382109A859005740B4 /* PBXTargetDependency */,
 			);
-			name = "第三方库学习UITests";
+			name = DanmuUITests;
 			productName = "第三方库学习UITests";
-			productReference = 9C1E93362109A859005740B4 /* 第三方库学习UITests.xctest */;
+			productReference = 9C1E93362109A859005740B4 /* DanmuUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -216,7 +216,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9C1E93122109A84F005740B4 /* Build configuration list for PBXProject "第三方库学习" */;
+			buildConfigurationList = 9C1E93122109A84F005740B4 /* Build configuration list for PBXProject "Danmu" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -229,9 +229,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9C1E93162109A84F005740B4 /* 第三方库学习 */,
-				9C1E932A2109A859005740B4 /* 第三方库学习Tests */,
-				9C1E93352109A859005740B4 /* 第三方库学习UITests */,
+				9C1E93162109A84F005740B4 /* Danmu */,
+				9C1E932A2109A859005740B4 /* DanmuTests */,
+				9C1E93352109A859005740B4 /* DanmuUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -298,12 +298,12 @@
 /* Begin PBXTargetDependency section */
 		9C1E932D2109A859005740B4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9C1E93162109A84F005740B4 /* 第三方库学习 */;
+			target = 9C1E93162109A84F005740B4 /* Danmu */;
 			targetProxy = 9C1E932C2109A859005740B4 /* PBXContainerItemProxy */;
 		};
 		9C1E93382109A859005740B4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9C1E93162109A84F005740B4 /* 第三方库学习 */;
+			target = 9C1E93162109A84F005740B4 /* Danmu */;
 			targetProxy = 9C1E93372109A859005740B4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -497,7 +497,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/第三方库学习.app/第三方库学习";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Danmu.app/Danmu";
 			};
 			name = Debug;
 		};
@@ -518,7 +518,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/第三方库学习.app/第三方库学习";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Danmu.app/Danmu";
 			};
 			name = Release;
 		};
@@ -565,7 +565,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9C1E93122109A84F005740B4 /* Build configuration list for PBXProject "第三方库学习" */ = {
+		9C1E93122109A84F005740B4 /* Build configuration list for PBXProject "Danmu" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9C1E933D2109A859005740B4 /* Debug */,
@@ -574,7 +574,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9C1E933F2109A859005740B4 /* Build configuration list for PBXNativeTarget "第三方库学习" */ = {
+		9C1E933F2109A859005740B4 /* Build configuration list for PBXNativeTarget "Danmu" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9C1E93402109A859005740B4 /* Debug */,
@@ -583,7 +583,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9C1E93422109A859005740B4 /* Build configuration list for PBXNativeTarget "第三方库学习Tests" */ = {
+		9C1E93422109A859005740B4 /* Build configuration list for PBXNativeTarget "DanmuTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9C1E93432109A859005740B4 /* Debug */,
@@ -592,7 +592,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9C1E93452109A859005740B4 /* Build configuration list for PBXNativeTarget "第三方库学习UITests" */ = {
+		9C1E93452109A859005740B4 /* Build configuration list for PBXNativeTarget "DanmuUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9C1E93462109A859005740B4 /* Debug */,

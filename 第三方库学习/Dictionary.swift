@@ -10,7 +10,7 @@ import UIKit
 
 let Screen_Width = UIScreen.main.bounds.size.width
 let Screen_Height = UIScreen.main.bounds.size.height
-
+let isIphoneX = Screen_Height >= 812.0
 
 extension Dictionary {
 

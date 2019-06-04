@@ -22,17 +22,12 @@ class FlyLabelView: UIView {
         
         let point = tap.location(in: self)
         print( point )
-
-        
-     
         print("点我干啥?\(textLabel.text ?? "无内容")")
-        
-        
         
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        print("点我干啥?\(textLabel.text ?? "无内容")")
+        print("点我干啥?touchesBegan\(textLabel.text ?? "无内容")")
 
     }
     
