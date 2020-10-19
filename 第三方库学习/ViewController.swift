@@ -26,8 +26,6 @@ class ViewController: UIViewController {
 
         danMuTest()
         
-        
-        
         let view = Bundle.main.loadNibNamed("FlyLabelView", owner: nil, options: nil)?.first as! FlyLabelView
         view.centerX  = Screen_Width * 0.5
         view.centerY = Screen_Height * 0.8
@@ -40,8 +38,7 @@ class ViewController: UIViewController {
     /**
      想要做的工作:
      1.弹幕遮盖的问题
-     2.点击弹幕的事件,比如对弹幕点赞之类的
-     3.当手指按住弹幕的时候,能否停止弹幕的动画,使其停在屏幕上
+     2.当手指按住弹幕的时候,能否停止弹幕的动画,使其停在屏幕上
      */
     func danMuTest()  {
         var i = 0
@@ -51,8 +48,8 @@ class ViewController: UIViewController {
             i += 1
         }
     }
-    
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+    /// 新增10条弹幕
+    @IBAction func addMoreDanMu(_ sender: Any) {
         
         manager.maxDanmuNum = 100
         
@@ -61,16 +58,21 @@ class ViewController: UIViewController {
             manager.showDanMu(text: stringArray[i] , fatherView : self.view)
         }
         
-        
-        
-        
-        
     }
     
-    
-    
-    
-    
-
+    // 重写touchesBegan, 把点击事件传递给对应的tapView
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
+        let point = touches.first?.location(in: self.view) ?? CGPoint.zero
+        
+        for flyView in manager.showViewArray {
+            
+            if flyView.layer.presentation()!.frame.contains(point) {
+                flyView.tapAction()
+            }
+            
+        }
+        
+    }
 }
 

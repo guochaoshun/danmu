@@ -39,7 +39,12 @@ class DanMuManager {
         // 进行弹道的区分,
         // 有缺陷,弹幕可能会有重叠的情况: 解决方法有以下几种.
         // 应该再有一个方法来获取可用的弹道,把新弹幕优先加入新弹道中;
-        // 弹幕实在太多的情况,就需要有选择的处理弹幕,当前登录的用户在自己的屏幕上肯定加入,剩余其他人的弹幕,有选择的加入部分;
+        /**
+         弹幕实在太多的情况,就需要有选择的处理弹幕,
+         1.当前登录的用户在自己的屏幕上肯定加入,剩余其他人的弹幕,有选择的加入部分;
+         2.在didReceiveMemoryWarning中,可以把不显示的弹幕移除一半,
+        还有一个优化建议,比如在某个时刻有很多弹幕, 后续用不到那么多了, 可以动态的去除部分, 比如始终保持hideViewArray.count 小于 showViewArray.count,也可以减少内存消耗
+         */
         // 弹幕的速度也要是可变的,短弹幕3秒消失,长弹幕根据字数决定时间
         
         // 方式1 : 在全屏幕上显示弹道,完全随机分布
@@ -55,6 +60,7 @@ class DanMuManager {
         view.width = view.textLabel.width*1.1
         view.x = Screen_Width
         
+        // 动画时间, 短弹幕固定3s,长弹幕根据 字数/3
         var duration = 3.0
         if text.count>10 {
             duration = Double(text.count) / 3
@@ -73,14 +79,11 @@ class DanMuManager {
         }
         
         print( "全部的弹幕" + String(allViewArray.count) + "\t\t显示的弹幕" + String(showViewArray.count) +  "\t\t未显示的弹幕" + String(hideViewArray.count))
-        
-
         fatherView.addSubview(view)
-        
         
     }
     
-    /// 去复用可以使用的弹幕
+    /// 去复用池中取出一个可用的弹幕,如果没有就创建一个
     func getAvailableFlyLabelView() -> FlyLabelView? {
 
         // 如果未显示的数组中有的话,从未显示的取值 , 并把此值移除掉, 加入显示的数组中

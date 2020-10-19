@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="c9I-Lv-XHr" customClass="FlyLabelView" customModule="第三方库学习" customModuleProvider="target">
+        <view contentMode="scaleToFill" id="c9I-Lv-XHr" customClass="FlyLabelView" customModule="Danmu" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="220" height="36"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
@@ -23,6 +21,7 @@
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
+            <viewLayoutGuide key="safeArea" id="csz-zt-5cj"/>
             <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
             <gestureRecognizers/>
             <constraints>
@@ -30,17 +29,10 @@
                 <constraint firstItem="wDN-TV-R6X" firstAttribute="centerY" secondItem="csz-zt-5cj" secondAttribute="centerY" id="Zrj-QE-Q2y"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <viewLayoutGuide key="safeArea" id="csz-zt-5cj"/>
             <connections>
                 <outlet property="textLabel" destination="wDN-TV-R6X" id="t8c-q5-2cG"/>
-                <outletCollection property="gestureRecognizers" destination="Q2I-P6-MVA" appends="YES" id="6y3-5U-OF6"/>
             </connections>
             <point key="canvasLocation" x="-277" y="-102"/>
         </view>
-        <tapGestureRecognizer id="Q2I-P6-MVA">
-            <connections>
-                <action selector="tapFlyLabel:" destination="c9I-Lv-XHr" id="zdM-24-eBf"/>
-            </connections>
-        </tapGestureRecognizer>
     </objects>
 </document>
