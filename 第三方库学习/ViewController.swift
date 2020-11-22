@@ -60,7 +60,7 @@ class ViewController: UIViewController {
         
     }
     
-    // 重写touchesBegan, 把点击事件传递给对应的tapView
+    // 重写touchesBegan, 把点击事件传递给对应的tapView, 这样flyView就可以点击了
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
         let point = touches.first?.location(in: self.view) ?? CGPoint.zero
